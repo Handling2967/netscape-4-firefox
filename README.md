@@ -22,3 +22,6 @@ Created and tested for Firefox 152.0.1, future Firefox updates may break functio
 
 5. **Restart:**
    - Restart Firefox to see your new Netscape look!
+
+## License
+GNU General Public License Version 3 (GPLv3)
