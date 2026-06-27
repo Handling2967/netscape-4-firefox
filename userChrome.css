@@ -1,0 +1,110 @@
+/* GLOBAL UI VARIABLES */
+:root {
+    --ui-bg: #BDBDBD;
+    --ui-border: #808080;
+    --border-radius-small: 0 !important;
+    --border-radius-medium: 0 !important;
+    --border-radius-large: 0 !important;
+}
+
+/* TOOLBAR LAYOUT */
+#navigator-toolbox {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#toolbar-menubar { order: 1 !important; }
+#nav-bar         { order: 2 !important; }
+#TabsToolbar     { order: 3 !important; }
+#PersonalToolbar { order: 4 !important; }
+
+/* unified toolbar styling */
+#nav-bar,
+#TabsToolbar,
+#toolbar-menubar,
+#PersonalToolbar {
+    background: var(--ui-bg) !important;
+    background-image: none !important;
+    border-bottom: 1px solid var(--ui-border) !important;
+    box-shadow: inset 0 1px #fff !important;
+}
+
+/* BUTTON BASE SIZING */
+#nav-bar .toolbarbutton-1 {
+    width: 40px !important;
+    height: 40px !important;
+}
+#nav-bar .toolbarbutton-1 > .toolbarbutton-icon {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* default icons */
+#back-button        .toolbarbutton-icon { list-style-image: url("images/netscape_back.png") !important; }
+#forward-button     .toolbarbutton-icon { list-style-image: url("images/netscape_forward.png") !important; }
+#reload-button      .toolbarbutton-icon { list-style-image: url("images/netscape_reload.png") !important; }
+#stop-button        .toolbarbutton-icon { list-style-image: url("images/netscape_stop.png") !important; }
+#home-button        .toolbarbutton-icon { list-style-image: url("images/netscape_home.png") !important; }
+#find-button        .toolbarbutton-icon { list-style-image: url("images/netscape_find.png") !important; }
+
+#unified-extensions-button .toolbarbutton-icon {
+    list-style-image: url("images/netscape-03.gif") !important;
+}
+#history-panelmenu .toolbarbutton-icon {
+    list-style-image: url("images/netscape_history.png") !important;
+}
+#print-button .toolbarbutton-icon {
+    list-style-image: url("images/print.png") !important;
+}
+#downloads-indicator-icon {
+    list-style-image: url("images/download_manager.png") !important;
+}
+
+/* HOVER STATES */
+#back-button:hover    .toolbarbutton-icon { list-style-image: url("images/netscape_back_hover.png") !important; }
+#forward-button:hover .toolbarbutton-icon { list-style-image: url("images/netscape_forward_hover.png") !important; }
+#reload-button:hover  .toolbarbutton-icon { list-style-image: url("images/netscape_reload_hover.png") !important; }
+#print-button:hover   .toolbarbutton-icon { list-style-image: url("images/print_hover.png") !important; }
+
+/* STAR / BOOKMARKS */
+#nav-bar #star-button {
+    list-style-image: url("images/favorite.png") !important;
+    height: 24px !important;
+    width: 24px !important;
+    padding: 0 !important;
+}
+
+#bookmarks-menu-button .toolbarbutton-icon {
+    list-style-image: url("images/bookmarks.png") !important;
+    height: 24px !important;
+    width: 24px !important;
+    padding: 0 6px 0 0 !important;
+}
+
+.bookmark-item[container="true"] .toolbarbutton-icon,
+#OtherBookmarks .toolbarbutton-icon {
+    list-style-image: url("images/more_bookmarks.png") !important;
+}
+
+.bookmark-item:not([container="true"]) .toolbarbutton-icon {
+    content: url("images/netscape_page.png") !important;
+}
+
+/* SIDEBAR ICON OVERRIDES */
+span.button-background img[src="chrome://browser/skin/history.svg"] {
+    content: url("images/history.png") !important;
+}
+span.button-background img[src="chrome://browser/skin/bookmark-hollow.svg"] {
+    content: url("images/bookmarks.png") !important;
+}
+
+#urlbar {
+    border: 2px solid #777 !important;
+    border-radius: 0 !important;
+    background-color: #fff !important;
+}
+.tabbrowser-tab[selected="true"] .tab-background {
+    border: 1px solid #0022A8 !important;
+    background-color: #bdbdbd !important;
+    box-sizing: border-box !important;
+}
