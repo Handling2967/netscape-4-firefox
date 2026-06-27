@@ -4,6 +4,14 @@ A `userChrome.css` theme that brings the classic, nostalgic aesthetic of Netscap
 
 ## Installation
 
+### ⚠️ Important Prerequisite
+Before applying this theme, you **must** set your Firefox theme to "Light":
+1. Open Firefox Settings.
+2. Go to **Extensions & Themes**.
+3. Select the **Light** system theme.
+*The theme will not render correctly if your browser is in "Dark" mode.
+If you still want websites to use the "Dark" mode you can set this seperately in Appearance -> Website appearance > Dark*
+
 1. **Open your Profile Folder:**
    - Type `about:support` in the Firefox URL bar and press enter.
    - Look for the **Profile Directory** row and click **Open Directory**.
