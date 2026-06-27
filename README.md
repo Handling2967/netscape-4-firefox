@@ -2,6 +2,8 @@
 A `userChrome.css` theme that brings the classic, nostalgic aesthetic of Netscape Navigator 4.0 to your modern Firefox browser.
 > **Note:** Created and tested for Firefox 152.0.1, future Firefox updates may break functionality
 
+![Project screenshot](images/screenshot.png)
+
 ## Installation
 
 ### ⚠️ Important Prerequisite
