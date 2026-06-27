@@ -1,4 +1,8 @@
-/* GLOBAL UI VARIABLES */
+/* netscape-4-firefox
+ * See documentation for instll instructions:
+ * https://github.com/your-username/your-repo-name */
+
+/* global ui */
 :root {
     --ui-bg: #BDBDBD;
     --ui-border: #808080;
@@ -7,7 +11,7 @@
     --border-radius-large: 0 !important;
 }
 
-/* TOOLBAR LAYOUT */
+/* toolbar layout and ordering */
 #navigator-toolbox {
     display: flex !important;
     flex-direction: column !important;
@@ -18,7 +22,7 @@
 #TabsToolbar     { order: 3 !important; }
 #PersonalToolbar { order: 4 !important; }
 
-/* unified toolbar styling */
+/* toolbar styling */
 #nav-bar,
 #TabsToolbar,
 #toolbar-menubar,
@@ -29,12 +33,12 @@
     box-shadow: inset 0 1px #fff !important;
 }
 
-/* BUTTON BASE SIZING */
+/* button sizing */
 #nav-bar .toolbarbutton-1 {
     width: 40px !important;
     height: 40px !important;
 }
-#nav-bar .toolbarbutton-1 > .toolbarbutton-icon {
+#nav-bar .toolbarbutton-icon {
     width: 40px !important;
     height: 40px !important;
 }
@@ -48,6 +52,9 @@
 #find-button        .toolbarbutton-icon { list-style-image: url("images/netscape_find.png") !important; }
 
 #unified-extensions-button .toolbarbutton-icon {
+    /* placeholder for future icon */
+}
+#PanelUI-menu-button .toolbarbutton-icon {
     list-style-image: url("images/netscape-03.gif") !important;
 }
 #history-panelmenu .toolbarbutton-icon {
@@ -60,13 +67,13 @@
     list-style-image: url("images/download_manager.png") !important;
 }
 
-/* HOVER STATES */
+/* hover states */
 #back-button:hover    .toolbarbutton-icon { list-style-image: url("images/netscape_back_hover.png") !important; }
 #forward-button:hover .toolbarbutton-icon { list-style-image: url("images/netscape_forward_hover.png") !important; }
 #reload-button:hover  .toolbarbutton-icon { list-style-image: url("images/netscape_reload_hover.png") !important; }
 #print-button:hover   .toolbarbutton-icon { list-style-image: url("images/print_hover.png") !important; }
 
-/* STAR / BOOKMARKS */
+/* star / bookmark */
 #nav-bar #star-button {
     list-style-image: url("images/favorite.png") !important;
     height: 24px !important;
@@ -90,7 +97,7 @@
     content: url("images/netscape_page.png") !important;
 }
 
-/* SIDEBAR ICON OVERRIDES */
+/* sidebar icons */
 span.button-background img[src="chrome://browser/skin/history.svg"] {
     content: url("images/history.png") !important;
 }
